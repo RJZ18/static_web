@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>Yelp API</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -18,11 +18,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-blue-grey w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="Project1.html#About" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="Project1.html#Report" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Report</a>
+    <a href="Project1.html#Architecture" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Architecture</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -42,40 +41,38 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-blue-grey w3-padding-64 w3-container">
-  <div class="w3-content">
+  <a name="About"></a>
+    <div class="w3-content">
     <div class="w3-twothird">
       <h1>About this project</h1>
       <h5 class="w3-padding-32">This is a social media analytics data platform in which customer activity is tracked across multiple cities. Users are able to interact with the Google Data Studio report shown below.</h5>
-
       <p class="w3-text-white">The project was implemented using the Yelp Fusion API, Python to extract the data from the API, Google Storage, Google Bigquery and Data Studio. </p>
     </div>
 
     <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+      <img src="yelpicon.JPG" class="w3-margin w3-circle" alt="Roberto Zamacona" style="width:30%">
     </div>
   </div>
 </div>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
+<div class="w3-row-padding w3-black w3-padding-64 w3-container">
+    <a name="Report"></a>
+    <div class="w3-content">
+    <h1>Yelp User Activity Report at Selected Cities</h1>
+     <iframe width="600" height="400" src="https://datastudio.google.com/embed/reporting/1MAUEs5l6f6nOFPAXYgmQb3fsW9wKQe5z/page/Gr7c" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
   </div>
 </div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+<!-- Third Grid -->
+<div class="w3-row-padding w3-blue-grey w3-padding-64 w3-container">
+    <a name="Architecture"></a>
+    <div class="w3-content">
+     <h1>Technical Architecture</h1>
+     <img src="Architecture.JPG" alt="Architecture" style="width:80%">
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
